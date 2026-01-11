@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Padel Court Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 55% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 55% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 55% 18%;
+
+    /* Navy Blue Primary */
+    --primary: 220 55% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Lime Green Accent */
+    --secondary: 70 75% 52%;
+    --secondary-foreground: 220 55% 18%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Cyan Accent */
+    --accent: 180 60% 57%;
+    --accent-foreground: 220 55% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 70 75% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 55% 18%), hsl(220 55% 28%));
+    --gradient-accent: linear-gradient(135deg, hsl(70 75% 52%), hsl(70 75% 62%));
+    --shadow-elevated: 0 10px 30px -5px hsl(220 55% 18% / 0.15);
+    --shadow-glow: 0 0 40px hsl(70 75% 52% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 55% 18%;
+    --sidebar-primary: 220 55% 18%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 95%;
+    --sidebar-accent-foreground: 220 55% 18%;
+    --sidebar-border: 220 20% 88%;
+    --sidebar-ring: 70 75% 52%;
+  }
+
+  .dark {
+    --background: 220 55% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 55% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 55% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 70 75% 52%;
+    --primary-foreground: 220 55% 18%;
+
+    --secondary: 220 55% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 55% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 180 60% 57%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 55% 25%;
+    --input: 220 55% 25%;
+    --ring: 70 75% 52%;
+
+    --sidebar-background: 220 55% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 70 75% 52%;
+    --sidebar-primary-foreground: 220 55% 18%;
+    --sidebar-accent: 220 55% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 55% 25%;
+    --sidebar-ring: 70 75% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
